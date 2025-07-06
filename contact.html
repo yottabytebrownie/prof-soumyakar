@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoumyashreeKar.portfolio</title>
+  <style>
+    /* Set full-page layout with fixed background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1498713301984-508015049dc1?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Add a semi-transparent overlay for better readability */
+    .content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 80px;
+      max-width: 800px;
+      margin: 0 auto;
+      /*min-height: 100vh;*/
+    }
+
+    h1, p {
+      margin-bottom: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Dr. Soumyashree Kar</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+  <div class="content">
+    <div style="height: auto">
+			<h3 class="myH3">Contact</h3>
+                <p class="myP">Email : soumyakar@iitb.ac.in, soumyakar.iitb@gmail.com</p>
+                <p class="myP">Contacts : +91-022-25767664</a></p>
+                <p class="myP">Office: 2nd floor, CSRE, IIT Bombay, Powai, Mumbai, Maharashtra, 400076</p>
+    </div>
+
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="func.js"></script>
+  </div>
+
+</body>
+</html>
